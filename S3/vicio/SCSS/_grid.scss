@@ -1,0 +1,154 @@
+.grid{
+    min-height: 100vh;
+    padding: $spacing-1;
+    display: grid;
+    margin-top: 100px;
+    &__quotation{
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 35px;
+        height: 155px;
+    }
+    &__item{
+        z-index: 1;
+        background-color: $color-3;
+        border-radius: 20px;
+        padding: $spacing-2;
+        margin-bottom: $spacing-2;
+        position: relative;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+        .grid__header{
+            @include flex-grid;
+            .grid__avatar{
+                border-radius: 50%;
+            }
+            .grid__customer{
+                padding: $spacing-1;
+                line-height: 0;
+                .grid__name{
+                    font-weight: bolder;
+                    color: $color-2;
+                    font-size: 18px;
+                }
+                .grid__intro{
+                    font-weight: lighter;
+                    color: $color-4;
+                    font-size: 14px;
+                }
+            }
+        }
+        .grid__main{
+            font-weight: lighter;
+            .grid__title{
+                color: $color-2;
+                font-size: 25px;
+            }
+            .grid__copy{
+                color: $color-2;
+                font-size: 16px;
+            }
+        }
+    }
+    &__item--2{
+        background-color: $color-1;
+    }
+
+    &__item--3{
+        background-color: $color-2;
+        .grid__header{
+            .grid__customer{
+                .grid__name{
+                    color: $color-1;
+                }
+            }
+        }
+        .grid__main{
+            .grid__title{
+                color: $color-1;
+            }
+            .grid__copy{
+                color: $color-4;
+            }
+        }
+    }
+
+    &__item--4{
+        background-color: $color-1;
+    }
+
+    &__item--5{
+        background-color: $color-2;
+        .grid__header{
+            .grid__customer{
+                .grid__name{
+                    color: $color-1;
+                }
+            }
+        }
+        .grid__main{
+            .grid__title{
+                color: $color-1;
+            }
+            .grid__copy{
+                color: $color-4;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .grid{
+        display: grid;
+        gap: 0 $spacing-2;
+        grid-template-areas: 
+        "item1 item1 item2"
+        "item3 item4 item4"
+        "item5 item5 item5";
+    }
+
+    .item-1{
+        grid-area: item1;
+    }
+    .item-2{
+        grid-area: item2;
+    }
+    .item-3{
+        grid-area: item3;
+    }
+    .item-4{
+        grid-area: item4;
+    }
+    .item-5{
+        grid-area: item5;
+    }
+    
+}
+
+@media screen and (min-width:1366px){
+    .grid{
+        display: grid;
+        gap: 0 $spacing-2;
+        margin: 0 10%;
+        grid-template-areas: 
+        "item1 item1 item2 item5"
+        "item3 item4 item4 item5";
+    }
+
+    .item-1{
+        grid-area: item1;
+    }
+    .item-2{
+        grid-area: item2;
+    }
+    .item-3{
+        grid-area: item3;
+    }
+    .item-4{
+        grid-area: item4;
+    }
+    .item-5{
+        grid-area: item5;
+    }
+}

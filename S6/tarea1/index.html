@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Advina tu edad</title>
+</head>
+<body>
+    <section class="card">
+        <h1 class="card__title">Adivina tu edad</h1>
+        <form class="card__input">
+            <label for="input">
+                <input id="input" type="text" placeholder="Introduce tu nombre..." required> 
+                <button type="Button" class="card__button" id="predictButton" >Adivinar</button> <!--Tuve que agregar type=button porque sin ello mi página no estaba cargando-->
+            </label>
+        </form>
+        <div class="card__output">
+            <p id="output">?</p>
+        </div>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+// No lo estoy haciendo responsive para poner foco en las peticiones
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 10px;
+    margin: 100px;
+
+    &__title{
+        color: white;
+        font-size: 50px;
+    }
+
+    &__input{
+        width: 450px;
+        height: 70px;
+        margin-top: 25px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        gap: 5px;
+        align-items: center;
+        border-radius: 10px;
+        padding: 15px;
+        #input{
+            width: 300px;
+            padding-bottom: 5px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 2px solid gainsboro;
+            outline: none;
+        }
+    }
+
+    &__button{
+        color: white;
+        background-color: #8c8a4a;
+        font-size: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    &__button:hover{
+        background-color: #414022;
+    }
+
+    &__output{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 450px;
+        height: 200px;
+        margin-top: 25px;
+        border-radius: 10px;
+        #output{
+            font-size: 100px;
+            font-weight: bold;
+        }
+    }
+}

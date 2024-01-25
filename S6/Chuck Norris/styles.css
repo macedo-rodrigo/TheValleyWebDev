@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card__header {
+  background-color: #FFD0B3;
+  width: 320px;
+}
+.card__header .card__title {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #EF631A;
+  text-align: center;
+  padding: 20px;
+}
+.card__main {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__main .card__text {
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+.card__categories {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card__categories .card__categorie {
+  list-style: none;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  width: 250px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  color: #A0A0A0;
+}
+.card__categorie:hover {
+  background-color: #F5F5F5;
+}
+.card__categorie:active {
+  border: 2px solid #EF631A;
+  background-color: #FFD0B3;
+  color: #000000;
+}
+.card__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  width: 270px;
+  margin: 0 0 20px 0;
+}
+.card__buttons .card__button {
+  padding: 20px 30px;
+  border: none;
+  font-size: 18px;
+}
+.card__buttons #reset {
+  background-color: #FFF8F4;
+  color: #FFD0B3;
+}
+.card__buttons #new-joke {
+  background-color: #FFD0B3;
+  color: #FFF8F4;
+}
+.card__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #FFD0B3;
+}
+.card__footer .card__joke {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #EF631A;
+  margin: 20px;
+  text-align: center;
+}
+.card__footer .card__img {
+  width: 240px;
+  margin: 20px;
+}/*# sourceMappingURL=styles.css.map */

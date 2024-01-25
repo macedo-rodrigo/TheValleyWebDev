@@ -1,0 +1,37 @@
+@import 'variables';
+@import 'mixin';
+@import 'header';
+@import 'title';
+@import 'grid';
+@import 'footer';
+
+body{
+    margin: 0;
+    background-color: gainsboro;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: $spacing-2;
+    /*humberguese del background*/
+    background-image: url(/S3_CSSIV_V/vicio/assets/burger.png);
+    background-position: left -50% top 20%;
+    background-repeat: no-repeat;
+}
+
+@media screen and (min-width:1024px){
+    /*humburguer del background*/
+    body{
+        background-image: url(/S3_CSSIV_V/vicio/assets/burger.png);
+        background-position: left 20% top 60%;
+        background-repeat: no-repeat; 
+        background-size: 60%;
+    }
+}
+@media screen and (min-width:1366px){
+    /*humburguer del background*/
+    body{
+        background-image: url(/S3_CSSIV_V/vicio/assets/burger.png);
+        background-position: left 0% top 75%;
+        background-repeat: no-repeat; 
+        background-size: 60%;
+    }
+}

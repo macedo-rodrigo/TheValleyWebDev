@@ -1,0 +1,241 @@
+/*BODY*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat-L;
+    src: url(/S2_CSSII_III/Workshop/fonts/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-R;
+    src: url(/S2_CSSII_III/Workshop/fonts/Montserrat-Regular.ttf);
+}
+
+/* HEADER */
+.pre-header{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.pre-header a{
+    font-family: Montserrat-L;
+    color: black;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 16px;
+}
+
+.header{
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-menu{
+    font-size: 30px;
+}
+
+#logo{
+    width: 30%;
+    min-width: 200px;
+    height: auto;
+}
+
+.menu{
+    width: 50%;
+    list-style: none;
+    align-items: center;
+    display: none;
+}
+
+.menu-item{
+    text-align: center;
+    font-size: 1em;
+}
+
+.menu a{
+    text-decoration: none;
+    font-family: Montserrat-R;
+    color: black;
+    padding: 0 5px 0 5px;
+    font-weight: bolder;
+    box-sizing: border-box;
+}
+
+.menu a:hover{
+    color: #6B7280;
+    transition: ease-out;
+    transition-duration: 1s;
+    text-decoration: underline;
+}
+
+.icon-shopping{
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+/*PORTADA*/
+
+#foto-portada{
+    display: block;
+    width: 100vw;
+}
+
+
+/*MAIN*/
+
+.titulo{
+    font-family: Montserrat-R;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 5%;
+    width: 100%;
+}
+
+.catalog{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.product{
+    display: inline-block;
+    margin: 0;
+}
+
+.pet-img{
+    display: block;
+    width: 100%;
+}
+
+.product-tittle{
+    font-family: Montserrat-R;
+    font-weight: bolder;
+}
+
+.description{
+    font-family: Montserrat-L;
+}
+
+/*FOOTER*/
+
+.contenedor-listas{
+    display: none;
+}
+
+.copy{
+    font-family: Montserrat-L;
+    font-weight: lighter;
+    color: gray;
+    border-top: 1px solid gray;
+    text-align: left;
+    padding: 20px;
+}
+
+
+
+@media screen and (min-width:800px){
+
+    /*header*/
+    .pre-header{
+        justify-content: end;
+        align-items: center;
+        font-size: 20px;
+        padding: 0;
+    }
+    .header{
+        align-items: center;
+    }
+    .menu{
+        display:flex;
+        justify-content: space-around;
+    }
+    .icon-menu{
+        display: none;
+    }
+
+    #logo{
+        width: 25%;
+    }
+
+    .icon-shopping{
+        font-size: 30px;
+    }
+    /*SECCION PRODUCTOS*/
+
+    .pet-img{
+        width: 47vw; 
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px){
+    .pet-img{
+        width: 30vw; 
+    }
+    .contenedor-listas{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10% 0 40px 0;
+    }
+    .contener-listas ul{
+        list-style: none;
+        padding: 10px;
+    }
+    .footer-list-title{
+        font-family: Montserrat-R;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    .footer-item-list{
+        list-style: none;
+    }
+    
+    .footer-item-list a{
+        font-family: Montserrat-L;
+        font-weight: lighter;
+        color: gray;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .pet-img{
+        width: 23vw; 
+    }
+    .contenedor-listas{
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10% 0 40px 0;
+    }
+    .contener-listas ul{
+        list-style: none;
+        padding: 10px;
+    }
+    .footer-list-title{
+        font-family: Montserrat-R;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    .footer-item-list{
+        list-style: none;
+    }
+    
+    .footer-item-list a{
+        font-family: Montserrat-L;
+        font-weight: lighter;
+        color: gray;
+        text-align: center;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,44 @@
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    margin-top: 10px;
+}
+
+.container-web {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+.container-rrss{
+    
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #c3167c;
+    background-color: white;
+    border: none;
+    font-weight: bolder;
+}
+
+img{
+    width: 80px;
+}
+
+.button{
+    margin: 5px;
+    padding: 5px 20px 5px 20px;
+    background-color: #c3167c;
+    color: white;
+    border: 1px;
+    border-radius: 3px;
+}

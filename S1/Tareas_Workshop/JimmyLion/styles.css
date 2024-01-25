@@ -1,0 +1,175 @@
+body{
+    font-family: sans-serif;
+    color: #373737;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+/* header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.menu{
+    display: block;
+}
+
+.menu-list{
+    list-style: none;
+}
+
+.menu-list-item{
+    display: inline-block;
+}
+
+.menu-list-item a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #373737;
+    margin-right: 30px;
+}
+
+
+.logo-container img{
+    width: 120px;
+}
+
+/* main banner */
+
+.main-banner img{
+    width: 100%;
+}
+
+/* collections */
+
+.collections{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 450px;
+}
+
+.collection-description{
+    position:absolute;
+    top:115px;
+    left: 30px;
+}
+
+.collection-description-buy{
+    font-size: 30px;
+    font-weight: lighter;
+    margin: 0 0 10px 0;
+}
+
+.collection-description-text{
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 0;
+}
+
+/* Caracteristicas */
+
+.caracteristicas{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.caracteristica-descripcion{
+    display: inline-block;
+}
+
+.caracteristica-titulo{
+    font-weight: bolder;
+    margin: 0 0 10px 0;
+}
+
+.caracteristica-subtitulo{
+    font-weight: lighter;
+    margin: 0;
+}
+
+/* seccion packs personalizados */
+
+.pack{
+    margin: 20px;
+    position: relative;
+}
+
+.pack img{
+    width: 100%;
+}
+
+.pack-texto{
+    position: absolute;
+    top: 15%;
+    left: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.pack button{
+    background-color: #373737;
+    color: white;
+    padding: 10px;
+}
+
+.pack-texto-p1{
+    font-weight: lighter;
+    font-size: smaller;
+    margin-bottom: 5px;
+}
+
+.pack-texto-p2{
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0;
+    padding: 0;
+}
+.pack-texto-p3{
+    font-weight: lighter;
+    font-size: smaller;
+    margin-top: 5px;
+}
+
+/* seccion nueva colección - mi codigo */
+
+.texto-novedad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+/* Novidade */
+
+
+
+/* seccion descuento */
+.descuento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.descuento h1, p{
+    margin: 0;
+    padding: 0;
+}
+
+/* footer */
