@@ -6,7 +6,7 @@ const Bidder = () => {
     const [bidderList, SetBidderList] = React.useState([100]) // Al trabajar con listas, el valor con defecto suele ser un array (para que se genere un item bajo otro)
 
     const bidderAction = () => { // La función que voy a llamar siempre que alguien puje
-        const newBid = bidderList[bidderList.length - 1] + 5; // El valor de la puja anterior más 5
+        const newBid = bidderList[bidderList.length -1] + 5; // El valor de la puja anterior más 5
         SetBidderList([...bidderList, newBid]);
     }
 
