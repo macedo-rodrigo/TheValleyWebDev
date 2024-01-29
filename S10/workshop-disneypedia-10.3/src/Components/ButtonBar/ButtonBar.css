@@ -1,0 +1,20 @@
+.button-bar-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.button-back-forward{
+    background-color: cadetblue;
+    padding: 10px 12px 10px 12px;
+    border-radius: 20px;
+    width: 120px;
+    font-size: 15px;
+}
+
+.current-page{
+    margin: 0 15px 0 15px;
+    color: antiquewhite;
+    font-size: 20px;
+}

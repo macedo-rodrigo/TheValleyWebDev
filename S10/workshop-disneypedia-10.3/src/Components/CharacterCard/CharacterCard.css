@@ -1,0 +1,23 @@
+
+.character-container {
+    display: wrap;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+
+  }
+  
+  .character-container img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .character-container p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  
