@@ -1,0 +1,74 @@
+.cart-container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #8fe0ac;
+    width: 100vw;
+    height: 100vh;
+}
+
+.add-item-form{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: #8fe0ac solid 0.5px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 30vw;
+    height: auto;
+}
+
+.form-input{
+    padding: 7px;
+    border: #8fe0ac solid 0.5px;
+    border-radius: 5px;
+}
+
+.form-input:hover{
+    background-color: #FFFF80;
+}
+
+.submit-button{
+    padding: 10px;
+    margin-top: 25px;
+    width: 10rem;
+    border: #8fe0ac solid 0.5px;
+    border-radius: 5px;
+    align-self: center;
+    background-color: #FFFF80;
+}
+
+.item-card{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    border: #8fe0ac solid 0.5px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    width: 35vw;
+    height: 20vh;
+}
+
+.item-card-info{
+    padding-left: 20px;
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: #8fe0ac solid 0.5px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.item-name, .item-price, .item-units, .item-total{
+    font-weight: bolder;
+}
+
+.item-card-button{
+    padding: 10px;
+    margin-top: 25px;
+    width: 3rem;
+    border: #8fe0ac solid 0.5px;
+    border-radius: 5px;
+    align-self: center;
+    background-color: #FFFF80;
+}
