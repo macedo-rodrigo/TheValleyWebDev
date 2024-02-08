@@ -48,4 +48,4 @@ const CustomModal = ({ isOpen, characterId, closeModal }) => {
     );
 };
 
-export default CustomModal;
+export default CustomModal; 

@@ -1,0 +1,22 @@
+{
+  "contacts": [
+    {
+      "name": "Roberto",
+      "phoneNumber": "200487514",
+      "imageUrl": "https://www.shutterstock.com/es/image-photo/broad-billed-hummingbird-on-pure-white-526559815",
+      "id": "1"
+    },
+    {
+      "name": "María",
+      "phoneNumber": "15857964",
+      "imageUrl": "https://www.shutterstock.com/es/image-photo/gold-fish-isolated-on-white-background-580306465",
+      "id": "2"
+    },
+    {
+      "id": "c614",
+      "name": "Rodri",
+      "phoneNumber": "1234567",
+      "imageUrl": "khdcsbksafkjghsfjkgbhjkghejkg"
+    }
+  ]
+}
