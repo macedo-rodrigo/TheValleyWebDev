@@ -1,6 +1,6 @@
 import React from "react";
 
-const useFetch = (apiUrl, searchText) => { // Los paràmetros que quiero que tenga mi hook
+const useFetch = (apiUrl, searchText) => { // Los parmetros que quiero que tenga mi hook
 
     const [info, setInfo] = React.useState([]); // El array que viene de la API
 
@@ -18,10 +18,9 @@ const useFetch = (apiUrl, searchText) => { // Los paràmetros que quiero que ten
                 .then(data => setInfo(data))
                 .catch((error) => {
                     console.error('Error fetching the API: ' + error);
-                    // Manejar el error adecuadamente en el componente que utiliza el hook
                 });
         } else {
-            setInfo([]); // Si searchText está vacío, establecer info en un array vacío
+            setInfo([]); // Que sea un array vacío para que la API se llame igual
         }
     }, [searchText]);
 
