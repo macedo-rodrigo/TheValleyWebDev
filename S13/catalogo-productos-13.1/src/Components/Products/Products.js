@@ -11,7 +11,7 @@ const Products = () => {
 
     // Custom hook
     const [info] = useFetch(API_URL);
-    console.log(info)
+
 
     return (
         <>
