@@ -1,0 +1,8 @@
+.register-form__fieldset {
+  border: none;
+  box-shadow: none;
+}
+.register-form__error {
+  color: red;
+  margin: 5px 0;
+}/*# sourceMappingURL=RegisterForm.css.map */
