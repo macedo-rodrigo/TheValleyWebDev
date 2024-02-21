@@ -1,31 +1,48 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import './RegisterForm.scss';
+import { FormattedMessage, useIntl } from 'react-intl';
 
 const RegisterForm = () => {
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm();
   const [formData, setFormData] = React.useState(null);
 
   const onSubmit = (data) => setFormData(data);
+  const { formatMessage } = useIntl();
+
+  console.log(formatMessage({id: 'hello'}));
 
   return (
     <div className='register-form'>
       <form onSubmit={handleSubmit(onSubmit)}>
         <fieldset className='register-form__fieldset'>
           <input
-            placeholder='Type your name here...'
+            placeholder={formatMessage({ id:'register_form:first_name' })}
             type='text'
             {...register('firstName', { required: true })}
           />
-          { errors?.firstName && <p className='register-form__error'>Este campo es obligatorio</p>}
+          {errors?.firstName && (
+            <p className='register-form__error'><FormattedMessage id='register_form:required_field' /></p>
+          )}
+          
         </fieldset>
         <fieldset className='register-form__fieldset'>
           <input
-            placeholder='Now your last name...'
+            placeholder={formatMessage({ id:'register_form:last_name' })}
             type='text'
             {...register('lastName', { required: true, minLength: 3 })}
           />
-          { errors?.lastName && <p className='register-form__error'>Este campo es obligatorio y debe tener al menos 3 caracteres</p>}
+          {errors?.lastName && (
+            <p className='register-form__error'>
+              <FormattedMessage id='register_form:required_field_3_chars' />
+            </p>
+          )}
+          
         </fieldset>
 
         <button type='submit'>Aceptar</button>
