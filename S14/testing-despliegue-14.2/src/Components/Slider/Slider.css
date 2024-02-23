@@ -1,0 +1,36 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+  
+  .slider__image-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .slider__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider__image--visible {
+    opacity: 1;
+  }
+  
+  .slider__text-container {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  
+  .slider__title {
+    font-size: 1.5;
+  }
