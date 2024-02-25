@@ -1,6 +1,6 @@
 import "./CreateUser.scss";
 import { useForm } from "react-hook-form";
-import React, { useState } from "react";
+import React from "react";
 import { FormattedMessage} from "react-intl";
 import { useNavigate } from "react-router-dom";
 
@@ -18,8 +18,7 @@ const CreateUser = () => {
       body: JSON.stringify(data),
       headers: {
         "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
+      }
     })
       .then((response) => {
         if (response.ok) {
