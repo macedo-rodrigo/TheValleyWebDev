@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 const API_URL = process.env.REACT_APP_API_URL;
 
 const CreateUser = () => {
-  const { register, handleSubmit, formState:{errors} } = useForm();
+  const { register, handleSubmit } = useForm();
   const navigate = useNavigate(); // Esto es lo que nos permite navegar entre una página y otra por medio de un evento
 
   const onSubmit = (data) => {
