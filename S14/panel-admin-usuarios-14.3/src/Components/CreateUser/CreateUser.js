@@ -1,17 +1,18 @@
 import "./CreateUser.scss";
 import { useForm } from "react-hook-form";
 import React, { useState } from "react";
-import { FormattedMessage } from "react-intl";
+import { FormattedMessage} from "react-intl";
+import { useNavigate } from "react-router-dom";
 
 const API_URL = process.env.REACT_APP_API_URL;
 
 const CreateUser = () => {
-  //const { formatMessage } = useIntl();
-
-  const { register, handleSubmit } = useForm();
-  const [formData, setFormData] = useState(null);
+  const { register, handleSubmit, formState:{errors} } = useForm();
+  const navigate = useNavigate(); // Esto es lo que nos permite navegar entre una página y otra por medio de un evento
 
   const onSubmit = (data) => {
+
+    console.log("onSubmit function!")
     fetch(API_URL, {
       method: "POST",
       body: JSON.stringify(data),
@@ -20,21 +21,25 @@ const CreateUser = () => {
       },
       body: JSON.stringify(data),
     })
-      .then((response) => {})
+      .then((response) => {
+        if (response.ok) {
+          navigate("/users"); // Redirige a la página "Users.js"
+        }
+      })
       .then(() => {})
       .catch((error) => {});
   };
 
   return (
     <div className="page">
-      <h1>Crear usuario</h1>
+      <h1><FormattedMessage id="header.createUser"/></h1>
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form__fields">
           <div className="form__field">
             <label>
               <FormattedMessage id="createUserPage.name" />
             </label>
-            <input placeholder="Your name" type="text" {...register("name")} />
+            <input placeholder="Your name" type="text" {...register("name", { required: true })} />
           </div>
 
           <div className="form__field">
@@ -44,7 +49,7 @@ const CreateUser = () => {
             <input
               placeholder="Choose a username"
               type="text"
-              {...register("username")}
+              {...register("username", { required: true })}
             />
           </div>
 
@@ -55,7 +60,7 @@ const CreateUser = () => {
             <input
               placeholder="Your email"
               type="text"
-              {...register("email")}
+              {...register("email", { required: true })}
             />
           </div>
 
@@ -66,7 +71,7 @@ const CreateUser = () => {
             <input
               placeholder="Your phone number"
               type="text"
-              {...register("phone")}
+              {...register("phone", { required: true }) }
             />
           </div>
 
@@ -77,15 +82,17 @@ const CreateUser = () => {
             <input
               placeholder="Your Web Page"
               type="text"
-              {...register("web")}
+              {...register("web", { required: true })}
             />
           </div>
         </div>
 
-        <button className="form__button" type="submit">Create user</button>
+        <button className="form__button" type="submit"><FormattedMessage id="createUserPage.submitButton"/></button>
       </form>
     </div>
   );
 };
 
 export default CreateUser;
+
+//{errors?.name && <p className='register-form__error'>Este campo es obligatorio</p>}

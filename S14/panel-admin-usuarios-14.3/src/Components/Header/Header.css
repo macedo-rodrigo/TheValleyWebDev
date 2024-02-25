@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+.header__sections {
+  margin-left: 410px;
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header__section {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px;
+  color: #023020;
+  font-weight: lighter;
+}
+.header__buttons {
+  margin-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  width: 20vw;
+}
+.header__button {
+  margin-right: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+  padding: 5px;
+  border: none;
+  font-size: 15px;
+}
+
+.header__section:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  border-radius: 15px;
+  border: none;
+  color: #536878;
+}/*# sourceMappingURL=Header.css.map */

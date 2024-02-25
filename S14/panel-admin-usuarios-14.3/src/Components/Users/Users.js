@@ -22,8 +22,8 @@ const Users = () => {
         <FormattedMessage id="users:title" />
       </h1>
       <table className="table">
-        <thead>
-          <tr>
+        <thead className="table__thead">
+          <tr className="table__tr">
             <th>ID</th>
             <th>
               <FormattedMessage id="users:name" />
